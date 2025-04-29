@@ -1,4 +1,5 @@
-# Welcome to your Lovable project
+
+# Welcome to your Lovable project - Smart Desk Control Center
 
 ## Project info
 
@@ -36,19 +37,26 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Mobile App Development with Capacitor
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is configured to be built as a mobile app using Capacitor. To create an Android APK or iOS app:
 
-**Use GitHub Codespaces**
+1. **Export to GitHub**: Click the GitHub button in Lovable interface
+2. **Clone your repository**: `git clone <YOUR_REPO_URL>`
+3. **Install dependencies**: `npm install`
+4. **Build the web app**: `npm run build`
+5. **Add mobile platforms**:
+   - Android: `npx cap add android`
+   - iOS: `npx cap add ios` (requires macOS)
+6. **Sync web code to mobile**: `npx cap sync`
+7. **Open in mobile IDE**:
+   - Android: `npx cap open android`
+   - iOS: `npx cap open ios`
+8. **Build the app using Android Studio or Xcode**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**For Android APK**:
+- In Android Studio, select `Build > Build Bundle(s) / APK(s) > Build APK(s)`
+- The APK will be saved in `android/app/build/outputs/apk/debug/`
 
 ## What technologies are used for this project?
 
@@ -59,6 +67,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Capacitor (for mobile)
 
 ## How can I deploy this project?
 
@@ -71,3 +80,4 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
