@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
-import { Lamp, MonitorStand } from "lucide-react";
+import { Lamp, Monitor } from "lucide-react";
 import { useDesk } from "@/context/DeskContext";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -57,7 +57,7 @@ export function DeskControls() {
               "p-2 rounded-lg",
               deskOn ? "bg-desk-blue bg-opacity-20" : "bg-muted"
             )}>
-              <MonitorStand className={cn(
+              <Monitor className={cn(
                 "h-6 w-6",
                 deskOn ? "text-desk-blue" : "text-muted-foreground"
               )} />
